@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.road {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  width: 350px;
+  height: auto;
+  mix-blend-mode: darken;
+}
+
+.signal-stand {
+  position: absolute;
+  right: 110px;
+  top: 0;
+  width: 15px;
+  height: 100px;
+  background-color: silver;
+}
+
+.traffic-signal {
+  position: absolute;
+  top: 100px;
+  right: 80px;
+  width: 60px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.lights {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: gray;
+}
+
+.start-car, .stop-car {
+  position: absolute;
+  top: 70px;
+  width: 80px;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #222;
+  cursor: pointer;
+}
+
+.start-car {
+  left: 100px;
+}
+
+.stop-car {
+  left: 200px;
+}
